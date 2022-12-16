@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); 
+
+ :root{
+  --primary-white: #fff;
+  --primary-blue: rgb(4, 180, 255);
+  --primary-dark: rgba(255,255,255,0);
+ }
+
+ body{
+  font-style: "Coboto Condensed" sans-serif;
+ }
+/************************* NAVBAR **********************************/
+.logo{
+  height: 1.875rem;
+  width: auto;
+}
+/*----- NAV LINKS -----*/
+.nav-link{
+  font-weight: 100;
+  letter-spacing: 0.17rem;
+  cursor: pointer;
+  font-size: 0.5rem !important;
+  border-top: 3px solid var(--primary-dark);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li a{
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+}
+.navbar-nav > li > a{
+  color: var(--primary-white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-top: 3px solid var(--primary-blue);
+  color: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover{
+  border-top: 3px solid var(--primary-blue);
+  color: #fff;
 }
